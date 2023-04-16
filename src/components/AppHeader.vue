@@ -1,28 +1,46 @@
 <template>
-  <img src="../assets/img/dc-logo.png" alt="">
-  <ul>
-    <li></li>
+  <div class="header-top container d-flex justify-content-between align-content-center py-3">
+  <img src="../assets/img/dc-logo.png" alt="dc-logo">
+  <ul class="d-flex list-item-none align-items-center text-uppercase">
+    <li class="p-3" v-for="(button,index) in navbar" :key="index">
+      <a :href="button.url" :class="{'active': button.current}">{{ button.name }}</a>
+    </li>
   </ul>
-  <nav class="p-5">
-    <p class="h3">Content goes here</p>
-  </nav>
+  </div>
+  <div class="header-bottom">
+  </div>
+
+
 </template>
 
 <script>
+import { headerButtons } from '../data/data';
+
 export default {
   name: 'AppHeader',
   data() {
     return {
-
+      navbar: headerButtons
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-nav {
-background-color: #1C1C1C;
-color: white;
+.header-bottom {
+  width: 100%;
+  height: 300px;
+  background-image: url('../assets/img/jumbotron.jpg');
+  background-size: cover;
 }
-
+li {
+  list-style: none;
+  }
+a {
+  text-decoration: none;
+  color: grey
+}
+a:hover {
+  color: #0082F9;
+}
 </style>
