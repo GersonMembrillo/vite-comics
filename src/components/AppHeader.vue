@@ -33,14 +33,18 @@ export default {
   background-image: url('../assets/img/jumbotron.jpg');
   background-size: cover;
 }
+
 li {
   list-style: none;
   }
+
 a {
   text-decoration: none;
   color: grey
 }
 a:hover {
   color: #0082F9;
+  padding-bottom: 56px;
+  border-bottom: 10px solid #0082F9;
 }
 </style>

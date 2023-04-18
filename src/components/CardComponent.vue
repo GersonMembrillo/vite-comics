@@ -26,7 +26,7 @@ export default {
 
 .img-fluid {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   object-position: top;
 }

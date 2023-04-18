@@ -10,8 +10,8 @@
   <div class="container">
     <ul class="d-flex list-unstyled row-cols-5">
       <li class="" v-for="(button, index) in buttons" :key="index">
-        <a class="text-decoration-none text-white" :href="button.url" :class="{ 'active': button.current }">
-          <img :src="button.image" alt="">
+        <a class="text-decoration-none text-white d-flex" :href="button.url" :class="{ 'active': button.current }">
+          <img :src="button.src">
           {{ button.name }}
         </a>
       </li>
@@ -24,7 +24,7 @@
 <script>
 import { mainCards } from '../data/data'
 import CardComponent from './CardComponent.vue';
-import { mainButtons } from '../data/data.js';
+import { mainButtons } from '../data/data';
 
 export default {
     name: "AppMain",
@@ -34,7 +34,7 @@ export default {
     data() {
         return {
           cards: [...mainCards],
-          buttons: mainButtons,
+          buttons: [...mainButtons],
 
         };
     },

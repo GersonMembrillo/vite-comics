@@ -28,13 +28,23 @@
         </li>
       </ul>
     </div>
+    <div class="position-absolute">
+      <div class="container d-flex flex-row-reverse">
+        <img class="img-fluid" src="../assets/img/dc-logo-bg.png" alt="">
+      </div>
+    </div>
   </div>
+
   <div class="bottom-footer">
     <div class="container d-flex justify-content-between">
-      <button type="button" class="py-2 btn btn-outline-primary">SIGN UP NOW!</button>
-      <div class="right-bf">
-        <h5 class="text-primary">FOLLOW US</h5>
-        <i class="fa-brands fa-facebook-f"></i>
+      <button type="button" class="btn btn-outline-primary">SIGN UP NOW!</button>
+      <div class="right-bf d-flex align-items-center g-3">
+        <h5 class="text-primary pe-4 mb-0">FOLLOW US</h5>
+        <a href=""><img class="py-3 px-2" src="../assets/img/footer-facebook.png" alt=""></a>
+        <a href=""><img class="py-3 px-2" src="../assets/img/footer-twitter.png" alt=""></a>
+        <a href=""><img class="py-3 px-2" src="../assets/img/footer-youtube.png" alt=""></a>
+        <a href=""><img class="py-3 px-2" src="../assets/img/footer-pinterest.png" alt=""></a>
+        <a href=""><img class="py-3 px-2" src="../assets/img/footer-periscope.png" alt=""></a>
       </div>
     </div>
   </div>
@@ -89,18 +99,20 @@ color: white;
 .btn-outline-primary {
   border-radius: 0px;
   color: white;
-
+  width: 150px;
+  height: 60px;
 }
 
-.user-img {
-    background: #ffc0c0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
-    vertical-align: middle;
-    padding: 30px;
+.position-absolute{
+  width: 100%;
+  height: 420px;
+  top: 0,
+}
+
+.img-fluid {
+  width: 560px;
+  height: 420px;
+  object-fit: cover;
 }
 
 </style>
