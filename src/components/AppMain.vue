@@ -11,7 +11,7 @@
     <ul class="d-flex list-unstyled row-cols-5">
       <li class="" v-for="(button, index) in buttons" :key="index">
         <a class="text-decoration-none text-white d-flex" :href="button.url" :class="{ 'active': button.current }">
-          <img :src="button.src">
+          <img :src="button.src" :alt="button.name">
           {{ button.name }}
         </a>
       </li>

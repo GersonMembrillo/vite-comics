@@ -53,27 +53,27 @@ const headerButtons = [
 const mainButtons = [
 	{
 		name: 'Digital Comics',
-		src: '../assets/img/buy-comics-digital-comics.png',
+		src: '../../public/images/buy-comics-digital-comics.png',
 		url: '#',
 	},
 	{
 		name: 'DC Merchandise',
-		src: '../assets/img/buy-comics-merchandise.png',
+		src: '../public/images/buy-comics-merchandise.png',
 		url: '#',
 	},
 	{
 		name: 'Subscription',
-		src: '../assets/img/buy-comics-subscriptions.png',
+		src: '../public/images/buy-comics-subscriptions.png',
 		url: '#',
 	},
 	{
 		name: 'Comic Shop Locator',
-		src: '../assets/img/buy-comics-shop-locator.png',
+		src: '../public/images/buy-comics-shop-locator.png',
 		url: '#',
 	},
 	{
 		name: 'DC Power Visa',
-		src: '../assets/img/buy-dc-power-visa.svg',
+		src: '../public/images/buy-dc-power-visa.svg',
 		url: '#',
 	},
 ];
